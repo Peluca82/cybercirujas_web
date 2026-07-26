@@ -8,6 +8,11 @@ html {
     box-sizing: border-box;
 }
 
+::selection {
+  background-color: var(--color-acento-hover); /* Color de fondo al seleccionar */
+  color: #000000;            /* Color de las letras al seleccionar */
+}
+
 @font-face {
     font-family: 'fixedsys';
     src: url('../font/Fixedsys500c.otf') format('truetype');
@@ -75,6 +80,9 @@ html {
     --tamano-texto-m: 1.5rem;         /* 24px */
     --tamano-texto-l: 2rem;           /* 32px */
     --tamano-texto-xl: 3.5rem;        /* 56px */
+    
+    /* padding lateral de las secciones */
+    --padding-lateral: 5%;
 }
 
 body {
@@ -87,7 +95,7 @@ a {
 
 .section-title {
     font-size: var(--tamano-texto-xl);
-    padding: 5% 15% 0 15%;
+    padding: var(--padding-lateral) 15% 0 15%;
     margin-bottom: var(--espacio-md);
 }
 
@@ -197,6 +205,7 @@ button {
     background-size: cover;
     background-position: center;
     background-repeat: repeat-x;
+    container: contenido / inline-size;
 }
 
 .about {
@@ -279,7 +288,7 @@ button {
     color: var(--color-texto-oscuro);
     display: flex;
     gap: var(--espacio-md);
-    height: 40dvh;
+    height: 50vh;
 
     fieldset {
         border: 8px double var(--color-texto-oscuro);
@@ -300,6 +309,12 @@ button {
             text-align: center;
             line-height: 1.6;
         }
+    }
+}
+
+@container contenido (width < 768px) {
+    .actividades {
+        flex-direction: column;
     }
 }
 
@@ -438,5 +453,269 @@ footer {
 
     h1 {
         font-size: var(--tamano-texto-xl);
+    }
+}
+
+@media (width <= 767px) {
+
+    :root {
+        --tamano-texto-m: 1.05rem;
+        --tamano-texto-l: 1.25rem;
+        --tamano-texto-xl: 1.75rem;
+
+        --espacio-xs: 0.5rem;
+        --espacio-sm: 1rem;
+        --espacio-md: 1.5rem;
+        --espacio-lg: 2rem;
+    }
+
+    .compu {
+        display: none;
+    }
+
+    .horario {
+        display: none;
+    }
+
+    .ascii-arch {
+        display: none;
+    }
+    
+    .section-title {
+        font-size: clamp(1rem, 4.6vw, var(--tamano-texto-xl));
+        padding: 8% var(--padding-lateral) 0 var(--padding-lateral);
+        overflow: hidden;
+        margin-bottom: 0;
+        text-align: center;
+        margin-bottom: var(--espacio-md);
+    }
+
+    .header {
+        flex-direction: column;
+        justify-content: center;
+        gap: var(--espacio-sm);
+        text-align: center;
+    }
+
+    ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .logo {
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    #compu {
+        justify-self: center;
+    }
+
+    .compu p {
+        font-size: 0.5rem;
+        white-space: pre;
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "titulo"
+            "compu";
+        gap: var(--espacio-md);
+        padding: 5% var(--padding-lateral) 5% var(--padding-lateral);
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        button {
+            width: 50%;
+        }
+    }
+
+    .about {
+        padding: 0 var(--padding-lateral) 0 var(--padding-lateral);
+    }
+
+    .donaciones {
+        margin: 0 var(--padding-lateral) 0 var(--padding-lateral);
+    }
+
+    .container-donaciones {
+        padding: var(--espacio-lg);
+
+        p {
+            font-size: var(--tamano-texto-m);
+        }
+
+        h1 {
+            padding-bottom: var(--espacio-md);
+        }
+
+        legend {
+            margin-left: 0;
+            font-size: var(--tamano-texto-l);
+            text-align: center;
+        }
+
+        button {
+            align-self: stretch;
+        }
+    }
+
+    .actividades {
+        padding: 0 var(--padding-lateral) 0 var(--padding-lateral);
+        height: 100%;
+    }
+
+    .ciudades {
+        padding: 0 var(--padding-lateral) 0 var(--padding-lateral);
+    }   
+    
+    #links {
+        flex-wrap: wrap;
+    }
+
+    #copyright {
+        text-align: center;
+    }
+
+    .ascii-arch {
+        font-size: 0.75rem;
+        justify-self: center;
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    footer {
+        padding: var(--espacio-md);
+    }
+
+    .footer-info {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.75fr 1fr 0fr 0.5fr;
+        grid-template-areas:
+            "lema"
+            "links"
+            "arch"
+            "copyr";
+    }
+}
+
+@media (768px <= width < 1279px) {
+
+    :root {
+        --tamano-texto-m: 1.25rem;
+        --tamano-texto-l: 1.75rem;
+        --tamano-texto-xl: 2.5rem;
+
+        --padding-lateral: 8%;
+    }
+
+    .hero {
+        display: flex;
+        text-align: center;
+    }
+
+    .compu {
+        display: none;
+    }
+
+    .horario {
+        display: none;
+    }
+
+    .ascii-arch {
+        display: none;
+    }
+
+    .section-title {
+        font-size: clamp(1.25rem, 3.5vw, var(--tamano-texto-xl));
+        padding: 5% var(--padding-lateral) 0 var(--padding-lateral);
+        text-align: center;
+        overflow: hidden;
+        margin-bottom: var(--espacio-md);
+    }
+
+    .hero {
+        gap: var(--espacio-md);
+        padding: 5% var(--padding-lateral) 5% var(--padding-lateral);
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        button {
+            width: 50%;
+        }
+    }
+
+    .about {
+        padding: 0 var(--padding-lateral) 0 var(--padding-lateral);
+    }
+
+    .donaciones {
+        margin: 0 var(--padding-lateral) 0 var(--padding-lateral);
+    }
+
+    .container-donaciones {
+        p {
+            font-size: var(--tamano-texto-m);
+        }
+        h1 {
+            padding-bottom: var(--espacio-md);
+        }
+        legend {
+            margin-left: 0;
+            font-size: var(--tamano-texto-l);
+            text-align: center;
+        }
+        button {
+            align-self: stretch;
+        }
+    }
+
+    .actividades {
+        padding: 0 var(--padding-lateral) 0 var(--padding-lateral);
+        height: 500px;
+    }
+
+    .ciudades {
+        padding: 0 var(--padding-lateral) 0 var(--padding-lateral);
+    }
+
+    #links {
+        flex-wrap: wrap;
+    }
+
+    #copyright {
+        text-align: center;
+    }
+
+    .ascii-arch {
+        font-size: 1.25rem;
+        justify-self: center;
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    footer {
+        padding: var(--espacio-md);
+    }
+
+    .footer-info {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1.75fr 1fr 0fr 1fr;
+        grid-template-areas:
+            "lema"
+            "links"
+            "arch"
+            "copyr";
     }
 }
