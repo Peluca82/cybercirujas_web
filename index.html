@@ -4,35 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cybercirujas Club</title>
-    <link rel="stylesheet" href="css/style.css">    
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <section class="container">
+    <div class="page">
 
         <header class="header">
 
-            <div class="logo">
-                                                                                                                         
-                      █                             ▀                     ▀                              
-      ▄  ▄▄▄   ▄   ▄  █▄▄▄    ▄▄▄    ▄ ▄▄   ▄▄▄   ▄▄▄     ▄ ▄▄  ▄   ▄   ▄▄▄    ▄▄▄    ▄▄▄          ▄     
+            <pre class="header__logo logo">
+                      █                             ▀                     ▀
+      ▄  ▄▄▄   ▄   ▄  █▄▄▄    ▄▄▄    ▄ ▄▄   ▄▄▄   ▄▄▄     ▄ ▄▄  ▄   ▄   ▄▄▄    ▄▄▄    ▄▄▄          ▄
  ▄▄▀▀▀  █▀  ▀  ▀▄ ▄▀  █▀ ▀█  █▀  █   █▀  ▀ █▀  ▀    █     █▀  ▀ █   █     █   ▀   █  █   ▀          ▀▀▀▄▄
  ▀▀▄▄▄  █       █▄█   █   █  █▀▀▀▀   █     █        █     █     █   █     █   ▄▀▀▀█   ▀▀▀▄          ▄▄▄▀▀
-      ▀ ▀█▄▄▀   ▀█    ██▄█▀  ▀█▄▄▀   █     ▀█▄▄▀  ▄▄█▄▄   █     ▀▄▄▀█     █   ▀▄▄▀█  ▀▄▄▄▀         ▀     
-                ▄▀                                                        █                              
-               ▀▀                                                       ▀▀                 ▀▀▀▀▀▀        
-            </div>
+      ▀ ▀█▄▄▀   ▀█    ██▄█▀  ▀█▄▄▀   █     ▀█▄▄▀  ▄▄█▄▄   █     ▀▄▄▀█     █   ▀▄▄▀█  ▀▄▄▄▀         ▀
+                ▄▀                                                        █
+               ▀▀                                                       ▀▀                 ▀▀▀▀▀▀
+            </pre>
 
-            <nav class="nav">
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="#">Nosotros</a></li>
-                    <li><a href="manifiesto.html">Manifiesto</a></li>
-                    <li><a href="#">Contacto</a></li>
+            <nav class="header__nav nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a class="nav__link link" href="index.html">Inicio</a></li>
+                    <li class="nav__item"><a class="nav__link link" href="#">Nosotros</a></li>
+                    <li class="nav__item"><a class="nav__link link" href="manifiesto.html">Manifiesto</a></li>
+                    <li class="nav__item"><a class="nav__link link" href="#">Contacto</a></li>
                 </ul>
             </nav>
 
-            <div class="horario">
-                <p>MIE 22 JUL 26 - 22:39:22</p>
+            <div class="header__datetime datetime">
+                <p class="text"><time datetime="2026-07-22T22:39:22">MIE 22 JUL 26 - 22:39:22</time></p>
             </div>
 
         </header>
@@ -41,25 +40,26 @@
 
             <section class="hero">
 
-                <div id="hero-text"> 
+                <div class="hero__content">
 
-                    <p class="linea">run inicio.exe</p>
-                    <h1>Utilización de software libre con fines prácticos</h1>
+                    <p class="text--run">run inicio.exe</p>
+                    <h1 class="heading">Utilización de software libre con fines prácticos</h1>
 
-                    <div class="hero-subtext">
-                        <p>> Luchando contra la obsolescencia programada,<br> una compu por vez.</p>
-                        <p>> El uso de la tecnología no es neutral.</p>
+                    <div class="hero__subtext">
+                        <p class="text">&gt; Luchando contra la obsolescencia programada,<br> una compu por vez.</p>
+                        <p class="text">&gt; El uso de la tecnología no es neutral.</p>
                     </div>
-    
-                    <div class="buttons">
-                        <button type="button"><a href="">Hacer una donación</a></button>
-                        <button type="button"><a href="manifiesto.html">MANIFIESTO</a></button>
+
+                    <div class="btn-group">
+                        <a class="btn" href="">Hacer una donación</a>
+                        <a class="btn" href="manifiesto.html">MANIFIESTO</a>
                     </div>
 
                 </div>
 
-                <div class="logo compu" id="compu">
-                    <p>                       .,,uod8B8bou,,.
+                <figure class="hero__ascii ascii">
+                    <pre>
+                       .,,uod8B8bou,,.
               ..,uod8BBBBBBBBBBBBBBBBRPFT?l!i:.
          ,=m8BBBBBBBBBBBBBBBRPFT?!||||||||||||||
          !...:!TVBBBRPFT||||||||||!!^^""'   ||||
@@ -73,132 +73,136 @@
          `.........||||                    ,||||
           .;.......||||               _.-!!|||||
    .,uodWBBBBb.....||||       _.-!!|||||||||!:'
-!YBBBBBBBBBBBBBBb..!|||:..-!!|||||||!iof68BBBBBb....
-!..YBBBBBBBBBBBBBBb!!||||||||!iof68BBBBBBRPFT?!::   `.
-!....YBBBBBBBBBBBBBBbaaitf68BBBBBBRPFT?!:::::::::     `.
-!......YBBBBBBBBBBBBBBBBBBBRPFT?!::::::;:!^"`;:::       `.
-!........YBBBBBBBBBBRPFT?!::::::::::^''...::::::;         iBBbo.
-`..........YBRPFT?!::::::::::::::::::::::::;iof68bo.      WBBBBbo.
-  `..........:::::::::::::::::::::::;iof688888888888b.     `YBBBP^'
-    `........::::::::::::::::;iof688888888888888888888b.     `
-      `......:::::::::;iof688888888888888888888888888888b.
-        `....:::;iof688888888888888888888888888888888899fT!
-          `..::!8888888888888888888888888888888899fT|!^"'
-            `' !!988888888888888888888888899fT|!^"'
-                `!!8888888888888888899fT|!^"'
-                  `!988888888899fT|!^"'
-                    `!9899fT|!^"'
-                      `!^"'
-                    </p>
-                </div>
+ !YBBBBBBBBBBBBBBb..!|||:..-!!|||||||!iof68BBBBBb....
+ !..YBBBBBBBBBBBBBBb!!||||||||!iof68BBBBBBRPFT?!::   `.
+ !....YBBBBBBBBBBBBBBbaaitf68BBBBBBRPFT?!:::::::::     `.
+ !......YBBBBBBBBBBBBBBBBBBBRPFT?!::::::;:!^"`;:::       `.
+ !........YBBBBBBBBBBRPFT?!::::::::::^''...::::::;         iBBbo.
+ `..........YBRPFT?!::::::::::::::::::::::::;iof68bo.      WBBBBbo.
+   `..........:::::::::::::::::::::::;iof688888888888b.     `YBBBP^'
+     `........::::::::::::::::;iof688888888888888888888b.     `
+       `......:::::::::;iof688888888888888888888888888888b.
+         `....:::;iof688888888888888888888888888888888899fT!
+           `..::!8888888888888888888888888888888899fT|!^"'
+             `' !!988888888888888888888888899fT|!^"'
+                 `!!8888888888888888899fT|!^"'
+                   `!988888888899fT|!^"'
+                     `!9899fT|!^"'
+                       `!^"'
+                    </pre>
+                </figure>
 
             </section>
 
-            <section class="content-fondo">
+            <section class="content">
 
-                <h1 class="section-title">════ Quienes somos? ════</h1>
-                <section class="about">
-                    <p>Cybercirujas nace de las ganas que tenemos de trastear con aparatos electrónicos. Al principio fue simplemente un capricho para juntar compus viejas (bastante viejas) e instalarle esos antiguos juegos de DOS que tanto placer nos dieron.</p>
-    
-                    <p>Cybercirujas es un grupo de usuarios y usuarias organizadas que busca luchar contra la obsolescencia programada mediante la utilización de software libre. De esta manera, Cybercirujas es un espacio de promoción de utilización de software libre con fines prácticos: usamos estas tecnologías por convencimiento filosófico pero también por cuestiones técnicas. Los sistemas operativos basados en software libre son los adecuados para utilizar en aquellos equipos que se consideran como obsoletos.</p>
-    
-                    <img src="img/foto_1.png" alt="">
-                </section>
+                <h2 class="heading--section">&boxH;&boxH;&boxH;&boxH; Quienes somos? &boxH;&boxH;&boxH;&boxH;</h2>
 
-                <h1 class="section-title">════ Donaciones ═════</h1>
-                <section class="donaciones">
+                <article class="about">
+                    <p class="text">Cybercirujas nace de las ganas que tenemos de trastear con aparatos electrónicos. Al principio fue simplemente un capricho para juntar compus viejas (bastante viejas) e instalarle esos antiguos juegos de DOS que tanto placer nos dieron.</p>
 
-                    <fieldset class="container-donaciones"> 
-                        <legend>Envianos el hardware que quieras</legend>
-                        <h1>> Donala a cybercirujas y nosotros la recirculamos entre la comunidad!</h1>
-                        <p>Actualmente estamos buscando:</p>
+                    <p class="text">Cybercirujas es un grupo de usuarios y usuarias organizadas que busca luchar contra la obsolescencia programada mediante la utilización de software libre. De esta manera, Cybercirujas es un espacio de promoción de utilización de software libre con fines prácticos: usamos estas tecnologías por convencimiento filosófico pero también por cuestiones técnicas. Los sistemas operativos basados en software libre son los adecuados para utilizar en aquellos equipos que se consideran como obsoletos.</p>
 
-                        <ul>
-                            <li>Lapstops o netbooks con procesadores dual core y 2GB de RAM</li>
-                            <li>Componentes de laptops, modulos de 2GB de RAM DDR2/3</li>
-                            <li>Discos rigidos de laptops</li>
+                    <img class="image" src="img/foto_1.png" alt="Foto grupal de Cybercirujas">
+                </article>
+
+                <h2 class="heading--section">&boxH;&boxH;&boxH;&boxH; Donaciones &boxH;&boxH;&boxH;&boxH;&boxH;</h2>
+
+                <section class="donations">
+
+                    <fieldset class="donation-form">
+                        <legend class="donation-form__title heading">Envianos el hardware que quieras</legend>
+                        <h3 class="text--highlight">&gt; Donala a cybercirujas y nosotros la recirculamos entre la comunidad!</h3>
+                        <p class="text">Actualmente estamos buscando:</p>
+
+                        <ul class="donation-form__list">
+                            <li class="list-item">Lapstops o netbooks con procesadores dual core y 2GB de RAM</li>
+                            <li class="list-item">Componentes de laptops, modulos de 2GB de RAM DDR2/3</li>
+                            <li class="list-item">Discos rigidos de laptops</li>
                         </ul>
 
-                        <button type="button"><a href="">Hacer una donación</a></button>
+                        <a class="btn" href="">Hacer una donación</a>
                     </fieldset>
 
                 </section>
 
-                <h1 class="section-title">════ Nuestras Actividades ════</h1>
-                <section class="actividades">
+                <h2 class="heading--section">&boxH;&boxH;&boxH;&boxH; Nuestras Actividades &boxH;&boxH;&boxH;&boxH;</h2>
 
-                    <fieldset>
-                        <legend>TALLERES DE <br>REPARACION</legend>
-                        <p>Encuentros presenciales donde aprendemos a diagnosticar y revivir hardware descartado.</p>
-                    </fieldset>
+                <div class="activities">
 
-                    <fieldset>
-                        <legend>LIBERACIÓN DE <br>HARDWARE</legend>
-                        <p>Instalación masiva de distribuciones GNU/Linux ligeras en computadoras "viejas" para devolverlas a la vida útil.</p>
-                    </fieldset>
+                    <article class="card">
+                        <h3 class="card__title heading">TALLERES DE <br>REPARACION</h3>
+                        <p class="card__desc text">Encuentros presenciales donde aprendemos a diagnosticar y revivir hardware descartado.</p>
+                    </article>
 
-                    <fieldset>
-                        <legend>CHARLAS Y <br>DEBATES</legend>
-                        <p>Discusiones sobre soberanía tecnológica y la filosofía detrás del software libre.</p>
-                    </fieldset>
+                    <article class="card">
+                        <h3 class="card__title heading">LIBERACIÓN DE <br>HARDWARE</h3>
+                        <p class="card__desc text">Instalación masiva de distribuciones GNU/Linux ligeras en computadoras "viejas" para devolverlas a la vida útil.</p>
+                    </article>
 
-                </section>
+                    <article class="card">
+                        <h3 class="card__title heading">CHARLAS Y <br>DEBATES</h3>
+                        <p class="card__desc text">Discusiones sobre soberanía tecnológica y la filosofía detrás del software libre.</p>
+                    </article>
 
-                <h1 class="section-title">════ Ciudades Cybercirujas ════</h1>
-                <section class="ciudades">
+                </div>
 
-                    <p>Células territoriales autogestionadas. No tenemos oficinas ni sedes fijas: nos coordinamos en nuestros canales comunitarios y nos encontramos en ferias, talleres y jornadas mutantes.</p>
+                <h2 class="heading--section">&boxH;&boxH;&boxH;&boxH; Ciudades Cybercirujas &boxH;&boxH;&boxH;&boxH;</h2>
 
-                    <div class="tabla-localidades">
+                <section class="cities">
 
-                        <div class="barra-datos">
-                            <div class="barra-datos-texto">
-                                <p>LOCALIDAD</p>
-                                <p>ESTADO</p>
+                    <p class="text">Células territoriales autogestionadas. No tenemos oficinas ni sedes fijas: nos coordinamos en nuestros canales comunitarios y nos encontramos en ferias, talleres y jornadas mutantes.</p>
+
+                    <div class="city-table">
+
+                        <div class="city-table__header">
+                            <div class="city-table__header-inner">
+                                <p class="text">LOCALIDAD</p>
+                                <p class="text">ESTADO</p>
                             </div>
                         </div>
 
-                        <div class="localidades">
+                        <div class="city-table__body">
 
-                            <div class="localidad">
-                                <p>La Plata</p>
-                                <p class="atenuado">[ activo ]</p>
+                            <div class="city-table__row">
+                                <p class="text">La Plata</p>
+                                <p class="text--muted">[ activo ]</p>
                             </div>
 
-                            <div class="localidad">
-                                <p>Córdoba</p>
-                                <p class="atenuado">[ en organización ]</p>
+                            <div class="city-table__row">
+                                <p class="text">Córdoba</p>
+                                <p class="text--muted">[ en organización ]</p>
                             </div>
 
-                            <div class="localidad">
-                                <p>Rosario</p>
-                                <p class="atenuado">[ encuentros ]</p>
+                            <div class="city-table__row">
+                                <p class="text">Rosario</p>
+                                <p class="text--muted">[ encuentros ]</p>
                             </div>
 
-                            <div class="localidad">
-                                <p>CABA</p>
-                                <p class="atenuado">[ activo ]</p>
+                            <div class="city-table__row">
+                                <p class="text">CABA</p>
+                                <p class="text--muted">[ activo ]</p>
                             </div>
 
-                            <div class="localidad">
-                                <p>Posadas</p>
-                                <p class="atenuado">[ encuentros ]</p>
+                            <div class="city-table__row">
+                                <p class="text">Posadas</p>
+                                <p class="text--muted">[ encuentros ]</p>
                             </div>
 
-                            <div class="localidad">
-                                <p>BGA Oeste</p>
-                                <p class="atenuado">[ en organización ]</p>
+                            <div class="city-table__row">
+                                <p class="text">BGA Oeste</p>
+                                <p class="text--muted">[ en organización ]</p>
                             </div>
 
-                            <div class="localidad">
-                                <p>Mendoza</p>
-                                <p class="atenuado">[ activo ]</p>
+                            <div class="city-table__row">
+                                <p class="text">Mendoza</p>
+                                <p class="text--muted">[ activo ]</p>
                             </div>
 
                         </div>
 
-                        <div class="barra-dato">
-                            <p>DATO DE COLOR</p>
+                        <div class="city-table__footer">
+                            <p class="text">DATO DE COLOR</p>
                         </div>
 
                     </div>
@@ -209,55 +213,56 @@
 
         </main>
 
-        <footer>
-            <section class="footer-info">
+        <footer class="footer">
 
-                <div id="lema">
-                    <h1>Ni hardware ocioso,<br> ni ociosos con <br> hardware</h1>
-                    <div class="logo">
-                                                                                                                             
-                          █                             ▀                     ▀                              
-          ▄  ▄▄▄   ▄   ▄  █▄▄▄    ▄▄▄    ▄ ▄▄   ▄▄▄   ▄▄▄     ▄ ▄▄  ▄   ▄   ▄▄▄    ▄▄▄    ▄▄▄          ▄     
-     ▄▄▀▀▀  █▀  ▀  ▀▄ ▄▀  █▀ ▀█  █▀  █   █▀  ▀ █▀  ▀    █     █▀  ▀ █   █     █   ▀   █  █   ▀          ▀▀▀▄▄
-     ▀▀▄▄▄  █       █▄█   █   █  █▀▀▀▀   █     █        █     █     █   █     █   ▄▀▀▀█   ▀▀▀▄          ▄▄▄▀▀
-          ▀ ▀█▄▄▀   ▀█    ██▄█▀  ▀█▄▄▀   █     ▀█▄▄▀  ▄▄█▄▄   █     ▀▄▄▀█     █   ▀▄▄▀█  ▀▄▄▄▀         ▀     
-                    ▄▀                                                        █                              
-                   ▀▀                                                       ▀▀                 ▀▀▀▀▀▀        
-                    </div>
+            <div class="footer__grid">
+
+                <div class="footer__motto">
+                    <h2 class="heading--motto">Ni hardware ocioso,<br> ni ociosos con <br> hardware</h2>
+                    <pre class="logo">
+                              █                             ▀                     ▀
+              ▄  ▄▄▄   ▄   ▄  █▄▄▄    ▄▄▄    ▄ ▄▄   ▄▄▄   ▄▄▄     ▄ ▄▄  ▄   ▄   ▄▄▄    ▄▄▄    ▄▄▄          ▄
+         ▄▄▀▀▀  █▀  ▀  ▀▄ ▄▀  █▀ ▀█  █▀  █   █▀  ▀ █▀  ▀    █     █▀  ▀ █   █     █   ▀   █  █   ▀          ▀▀▀▄▄
+         ▀▀▄▄▄  █       █▄█   █   █  █▀▀▀▀   █     █        █     █     █   █     █   ▄▀▀▀█   ▀▀▀▄          ▄▄▄▀▀
+              ▀ ▀█▄▄▀   ▀█    ██▄█▀  ▀█▄▄▀   █     ▀█▄▄▀  ▄▄█▄▄   █     ▀▄▄▀█     █   ▀▄▄▀█  ▀▄▄▄▀         ▀
+                        ▄▀                                                        █
+                       ▀▀                                                       ▀▀                 ▀▀▀▀▀▀
+                        </pre>
                 </div>
 
-                <div id="links">
+                <nav class="footer__links">
 
-                    <div class="canales">
-                        <p>>LS CANALES_COMUNITARIOS.EXE</p>
-    
-                        <a href="" target="">matrix/fediverso</a>
-                        <a href="" target="">instagram</a>
-                        <a href="" target="">whatsapp</a>
-                        <a href="" target="">foro oficial</a>
-                        <a href="" target="">telegram</a>
+                    <div class="link-group">
+                        <p class="link-group__title text">&gt;LS CANALES_COMUNITARIOS.EXE</p>
+
+                        <a class="link" href="" target="_blank">matrix/fediverso</a>
+                        <a class="link" href="" target="_blank">instagram</a>
+                        <a class="link" href="" target="_blank">whatsapp</a>
+                        <a class="link" href="" target="_blank">foro oficial</a>
+                        <a class="link" href="" target="_blank">telegram</a>
                     </div>
 
-                    <div class="informacion">
-                        <p>>LS INFORMACIÓN.EXE</p>
-        
-                        <a href="manifiesto.html" target="">manifiesto</a>
-                        <a href="" target="">donaciones</a>
-                        <a href="" target="">próximas juntadas</a>
-                        <a href="" target="">preguntas frecuentes</a>
+                    <div class="link-group">
+                        <p class="link-group__title text">&gt;LS INFORMACIÓN.EXE</p>
+
+                        <a class="link" href="manifiesto.html" target="_blank">manifiesto</a>
+                        <a class="link" href="" target="_blank">donaciones</a>
+                        <a class="link" href="" target="_blank">próximas juntadas</a>
+                        <a class="link" href="" target="_blank">preguntas frecuentes</a>
                     </div>
 
-                </div>
+                </nav>
 
-                <div id="copyright">
-                    <p>copyright © 2026 // CC BY-SA 4.0</p>
+                <div class="footer__copyright">
+                    <p class="text--small">copyright &copy; 2026 // CC BY-SA 4.0</p>
                     <br>
                     <br>
-                    <p>Sin rastreadores ni cookies.</p>
-                    <p>Hecho con software libre.</p>
+                    <p class="text--small">Sin rastreadores ni cookies.</p>
+                    <p class="text--small">Hecho con software libre.</p>
                 </div>
 
-                <div class="ascii-arch" id="arch">
+                <figure class="footer__ascii ascii">
+                    <pre>
                    -`
                   .o+`
                  `ooo/
@@ -277,10 +282,13 @@
   `+sso+:-`                 `.-/+oso:
  `++:.                           `-/+
  .`                                 `
-                </div>
+                    </pre>
+                </figure>
 
-            </section>
+            </div>
+
         </footer>
-    </section>
+
+    </div>
 </body>
 </html>

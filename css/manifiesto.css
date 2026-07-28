@@ -1,4 +1,8 @@
-.manifiesto {
+/* ============================================================
+   ORGANISMS - Manifesto
+   ============================================================ */
+
+.manifesto {
     background-image: url('../img/fondo.png');
     background-size: cover;
     background-position: center;
@@ -8,7 +12,7 @@
     justify-content: center;
 }
 
-.container-manifiesto {
+.manifesto__container {
     width: 1596px;
     max-width: 100%;
     aspect-ratio: 1596 / 1750;
@@ -17,94 +21,116 @@
     background-position: center;
 }
 
-.manifiesto-text {
+.manifesto__content {
     color: var(--color-texto-oscuro);
     text-align: center;
     padding: 8% 14%;
-    h1 {
-        font-family: var(--fuente-manifiesto);
-        font-size: 64px;
-        padding-bottom: var(--espacio-lg);
-    }
 }
 
-.manifiesto-p {
+/* ============================================================
+   ATOMS - Manifesto specific
+   ============================================================ */
+
+.heading--manifesto {
+    font-family: var(--fuente-manifiesto);
+    font-size: 64px;
+    padding-bottom: var(--espacio-lg);
+}
+
+.text--manifesto {
     font-family: var(--fuente-secundaria);
     font-size: var(--tamano-texto-m);
     padding-bottom: var(--espacio-sm);
 }
 
-.firma {
+/* ============================================================
+   MOLECULES - Manifesto footer
+   ============================================================ */
+
+.manifesto__footer {
     font-family: var(--fuente-secundaria);
     font-size: var(--tamano-texto-xs);
     padding-top: var(--espacio-sm);
-    p {
-        padding-bottom: var(--espacio-sm);
-    }
 }
+
+.manifesto__footer .text--small {
+    padding-bottom: var(--espacio-sm);
+}
+
+/* ============================================================
+   BREAKPOINT: MOBILE (<= 767px)
+   ============================================================ */
 
 @media (width <= 767px) {
 
-    .manifiesto {
+    .manifesto {
         padding: 2% 0;
     }
 
-    .container-manifiesto {
+    .manifesto__container {
         width: 100%;
         height: auto;
         background-image: none;
     }
 
-    .manifiesto-text {
+    .manifesto__content {
         padding: 8% var(--padding-lateral);
-
-        h1 {
-            font-size: 1.75rem;
-            padding-bottom: var(--espacio-md);
-        }
     }
 
-    .manifiesto-p {
+    .heading--manifesto {
+        font-size: 1.75rem;
+        padding-bottom: var(--espacio-md);
+    }
+
+    .text--manifesto {
         font-size: var(--tamano-texto-m);
     }
 }
+
+/* ============================================================
+   BREAKPOINT: TABLET (768px - 1279px)
+   ============================================================ */
 
 @media (768px <= width < 1279px) {
 
-    .manifiesto {
+    .manifesto {
         padding: 3% 0;
     }
 
-    .container-manifiesto {
+    .manifesto__container {
         width: 100%;
         height: auto;
         background-image: none;
     }
 
-    .manifiesto-text {
+    .manifesto__content {
         padding: 6% var(--padding-lateral);
-
-        h1 {
-            font-size: 2.5rem;
-            padding-bottom: var(--espacio-lg);
-        }
     }
 
-    .manifiesto-p {
+    .heading--manifesto {
+        font-size: 2.5rem;
+        padding-bottom: var(--espacio-lg);
+    }
+
+    .text--manifesto {
         font-size: var(--tamano-texto-m);
     }
 }
 
+/* ============================================================
+   BREAKPOINT: SMALL DESKTOP (1280px - 1610px)
+   ============================================================ */
+
 @media (1280px <= width < 1611px) {
 
-    .container-manifiesto {
+    .manifesto__container {
         width: 100%;
         height: auto;
         aspect-ratio: unset;
         background-image: none;
     }
 
-    .manifiesto-text {
+    .manifesto__content {
         padding: 6% 10%;
     }
 }
